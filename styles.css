@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&family=Rubik:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --peterRiver: #3498db;
+  --belizeHole: #2980b9;
+  --darkBlue: #062446;
+  --silver: #bdc3c7;
+  --asbestos: #7f8c8d;
+  --wetAsphalt: #34495e;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--silver);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+.item {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 62.5rem;
+  background-color: #fff;
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 2rem 3.4rem rgba(0, 0, 0, 0.2);
+}
+.container .leftSide {
+  position: relative;
+  background-color: var(--darkBlue);
+  padding: 2.5rem;
+}
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+.profile .imgBx {
+  position: relative;
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile h2 {
+  color: #fff;
+  font-size: 1.4em;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.info {
+  padding-top: 2.5rem;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 1.25rem;
+}
+.item {
+  font-weight: 600;
+}
+.info ul {
+  position: relative;
+}
+.info ul li {
+  position: relative;
+  list-style: none;
+  margin: 0.6rem 0;
+  color: #fff;
+  font-weight: 300;
+}
+.info ul li .icon {
+  display: inline-block;
+  width: 1.875rem;
+  font-size: 1.25rem;
+  color: var(--peterRiver);
+}
+.info.education li {
+  margin-bottom: 1rem;
+}
+.info.education h5 {
+  color: var(--peterRiver);
+  font-weight: 500;
+}
+.info.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.info.education h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.info.languages .percent {
+  position: relative;
+  width: 100%;
+  height: 0.5rem;
+  display: block;
+  background-color: var(--wetAsphalt);
+  margin-top: 0.5rem;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+}
+.info.languages .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--peterRiver);
+  border-radius: 1.25rem;
+}
+/* Right Side */
+.container .rightSide {
+  position: relative;
+  background-color: #fff;
+  padding: 2.5rem;
+}
+.about {
+  margin-bottom: 3rem;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: var(--belizeHole);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+p {
+  color: var(--wetAsphalt);
+}
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1.25rem;
+}
+.about .box .yearCompany {
+  min-width: 10rem;
+}
+.about .box .yearCompany h5 {
+  color: var(--wetAsphalt);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.about .box .text h4 {
+  font-size: 1rem;
+  color: var(--peterRiver);
+}
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .box h4 {
+  text-transform: uppercase;
+  color: var(--asbestos);
+  font-weight: 500;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 0.6rem;
+  background-color: var(--silver);
+  border-radius: 1.25rem;
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--peterRiver);
+  border-radius: 1.25rem;
+}
+.references .reference {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--wetAsphalt);
+  font-weight: 500;
+  margin: 0.6rem 0;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.referenceName {
+  font-weight: 600;
+}
+@media (max-width: 1000px) {
+  .container {
+    margin: 0.6rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .yearCompany {
+    margin-bottom: 0.5rem;
+  }
+  .references .reference {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
